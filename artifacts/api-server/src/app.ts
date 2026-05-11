@@ -1,24 +1,26 @@
 import express, { type Express } from "express";
 import cors from "cors";
-import { pinoHttp, type HttpContext } from "pino-http"; // Added { pinoHttp } and HttpContext
+import * as pinoHttp from "pino-http"; // Changed to namespace import
 import router from "./routes";
 import { logger } from "./lib/logger";
 
 const app: Express = express();
 
 app.use(
-  pinoHttp({
+  // Use .default if the namespace import doesn't work, 
+  // or call it directly if it does. This handles both cases:
+  (typeof pinoHttp === 'function' ? pinoHttp : (pinoHttp as any).default)({
     logger,
     serializers: {
-      // Added types to req and res to fix TS7006
-      req(req: HttpContext["req"]) {
+      // Use "any" here as a fallback to satisfy TS7006 if HttpContext isn't exporting correctly
+      req(req: any) { 
         return {
           id: req.id,
           method: req.method,
           url: req.url?.split("?")[0],
         };
       },
-      res(res: HttpContext["res"]) {
+      res(res: any) {
         return {
           statusCode: res.statusCode,
         };
