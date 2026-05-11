@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "LZDzb9wi7xRUOXzLg4VYA"
+uri = "file://artifacts/portfolio/public/images/hero-portrait.png"
+type = "image"
+title = "Filipina woman portrait soft floral"
+
+[[generated]]
+id = "ex3fFke_oO1N1xSJ7A4CD"
+uri = "file://artifacts/portfolio/public/images/baking-skill.png"
+type = "image"
+title = "Bread and pastry baking setup"
+
+[[generated]]
+id = "duxbgIM_vtWLhoWrIQUQ-"
+uri = "file://artifacts/portfolio/public/images/dressmaking-skill.png"
+type = "image"
+title = "Dressmaking fabric and sketch setup"
+
+[[generated]]
+id = "hJYYYqmDxNW_Iu1Va1Y6W"
+uri = "file://artifacts/portfolio/public/images/beauty-skill.png"
+type = "image"
+title = "Beauty care cosmetics setup"
