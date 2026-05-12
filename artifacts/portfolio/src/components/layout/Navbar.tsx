@@ -13,7 +13,7 @@ const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
         <Link href="/" className="font-serif text-xl font-medium tracking-tight text-foreground hover:text-primary transition-colors" data-testid="nav-logo">
-          Maria Santos
+          Ritchel Escalante
         </Link>
         <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
           <a href="#about" className="hover:text-primary transition-colors" data-testid="nav-link-about">About</a>

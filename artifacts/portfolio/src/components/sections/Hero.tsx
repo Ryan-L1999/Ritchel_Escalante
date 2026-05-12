@@ -26,7 +26,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-lg text-muted-foreground mb-10 leading-relaxed max-w-md" data-testid="hero-subtitle">
-            Mabuhay! I'm Maria, a passionate artisan bringing technical excellence and personal warmth to bread & pastry production and beauty care.
+            Mabuhay! I'm Ritchel, a passionate artisan bringing technical excellence and personal warmth to bread & pastry production and beauty care.
           </p>
           
           <div className="flex flex-wrap items-center gap-4">
@@ -48,8 +48,8 @@ const Hero = () => {
         >
           <div className="aspect-[3/4] rounded-[2.5rem] overflow-hidden bg-muted relative z-10 border-8 border-background shadow-2xl">
             <img 
-              src="/images/hero-portrait.png" 
-              alt="Maria Santos Portrait" 
+              src="/images/ritchel.jpg" 
+              alt="Ritchel Escalante" 
               className="w-full h-full object-cover"
               data-testid="hero-image"
             />
